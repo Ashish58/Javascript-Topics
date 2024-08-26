@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialog Boxes in JavaScript (Alert, Confirm, Prompt)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .code-block {
+        background-color: #2e2e2e;
+        color: #f8f8f2;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        overflow-x: auto;
+      }
+      .code-block pre {
+        margin: 0;
+      }
+      .example-code,
+      .practice-question,
+      .output-question {
+        background-color: #1e1e1e;
+        color: #dcdcdc;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dialog Boxes in JavaScript (Alert, Confirm, Prompt)</h1>
+
+      <section>
+        <h2>Description:</h2>
+        <p>JavaScript provides built-in dialog boxes for user interaction:</p>
+        <ul>
+          <li><strong>alert()</strong>: Displays a message.</li>
+          <li>
+            <strong>confirm()</strong>: Asks for user confirmation (OK/Cancel).
+          </li>
+          <li><strong>prompt()</strong>: Requests user input.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Example:</h2>
+        <div class="example-code">
+          <pre>
+alert("Welcome to the site!");
+let userResponse = confirm("Do you agree?");
+let userName = prompt("Enter your name:", "Guest");
+                </pre
+          >
+        </div>
+      </section>
+
+      <section>
+        <h2>Practice Question:</h2>
+        <div class="practice-question">
+          <p>
+            Create a script that asks the user for their age using
+            <code>prompt()</code>, then displays an alert based on whether the
+            age is above or below 18.
+          </p>
+          <div class="code-block">
+            <pre>
+let age = prompt("Enter your age:");
+if (age >= 18) {
+    alert("You are an adult.");
+} else {
+    alert("You are a minor.");
+}
+                    </pre
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Output Question:</h2>
+        <div class="output-question">
+          <p>What is the output of this program if the user enters "22"?</p>
+          <div class="code-block">
+            <pre>
+let age = prompt("Enter your age:");
+if (age >= 18) {
+    alert("You are an adult.");
+} else {
+    alert("You are a minor.");
+}
+                    </pre
+            >
+          </div>
+          <p><strong>Expected Output:</strong></p>
+          <div class="code-block">
+            <pre>
+An alert box will display "You are an adult."
+                    </pre
+            >
+          </div>
+        </div>
+      </section>
+
+      <a href="index.html">Back to Topics</a>
+    </div>
+  </body>
+</html>

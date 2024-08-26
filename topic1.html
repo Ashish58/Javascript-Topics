@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .code-block {
+        background-color: #2e2e2e;
+        color: #f8f8f2;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        overflow-x: auto;
+      }
+      .code-block pre {
+        margin: 0;
+      }
+      .example-code {
+        background-color: #1e1e1e;
+        color: #dcdcdc;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        overflow-x: auto;
+      }
+      .practice-question,
+      .output-question {
+        background-color: #2e2e2e;
+        color: #f8f8f2;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Introduction to JavaScript</h1>
+      <a href="index.html">Back to Topics</a>
+      <section>
+        <h2>Description:</h2>
+        <p>
+          JavaScript is a high-level programming language used to create
+          interactive and dynamic content on websites. It runs in the browser,
+          allowing developers to manipulate the DOM (Document Object Model) and
+          enhance user experiences.
+        </p>
+      </section>
+
+      <section>
+        <h2>Example:</h2>
+        <div class="example-code">
+          <h3>HTML:</h3>
+          <pre>&lt;h1 id="title"&gt;Welcome!&lt;/h1&gt;</pre>
+          <h3>JavaScript:</h3>
+          <pre>
+document.getElementById('title').textContent = 'Welcome to JavaScript!';
+                </pre
+          >
+        </div>
+        <p>
+          <strong>Explanation:</strong> This script changes the text inside the
+          <code>&lt;h1&gt;</code> tag from "Welcome!" to "Welcome to
+          JavaScript!" upon page load.
+        </p>
+      </section>
+
+      <section>
+        <h2>Practice Question:</h2>
+        <div class="practice-question">
+          <p>
+            Create an HTML button that, when clicked, changes the text of a
+            paragraph to "Button Clicked!".
+          </p>
+          <p>
+            <strong>Expected Output:</strong> The paragraph text should change
+            to "Button Clicked!" upon clicking the button.
+          </p>
+          <div class="code-block">
+            <pre>
+&lt;button onclick="document.getElementById('message').textContent = 'Button Clicked!'&gt;Click Me&lt;/button&gt;
+&lt;p id="message"&gt;Original Text&lt;/p&gt;
+                    </pre
+            >
+          </div>
+          <p><strong>Output Question:</strong></p>
+          <div class="code-block">
+            <pre>
+&lt;button onclick="document.getElementById('message').textContent = 'Button Clicked!'"&gt;Click Me&lt;/button&gt;
+&lt;p id="message"&gt;Original Text&lt;/p&gt;
+                    </pre
+            >
+          </div>
+          <p>What is the output of this program when the button is clicked?</p>
+          <p>
+            <strong>Expected Output:</strong> The paragraph text will change to
+            "Button Clicked!" when the button is clicked.
+          </p>
+        </div>
+      </section>
+
+      <a href="index.html">Back to Topics</a>
+    </div>
+  </body>
+</html>

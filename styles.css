@@ -1,0 +1,42 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul.topics-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.topics-list li {
+    margin: 10px 0;
+}
+
+.topic-link {
+    display: block;
+    padding: 10px;
+    color: #1e90ff;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.topic-link:hover {
+    color: #ffffff;
+    background-color: #1e90ff;
+}

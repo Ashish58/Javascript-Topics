@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Types in JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .code-block {
+        background-color: #2e2e2e;
+        color: #f8f8f2;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        overflow-x: auto;
+      }
+      .code-block pre {
+        margin: 0;
+      }
+      .example-code,
+      .practice-question,
+      .output-question {
+        background-color: #1e1e1e;
+        color: #dcdcdc;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Data Types in JavaScript</h1>
+      <a href="index.html">Back to Topics</a>
+      <section>
+        <h2>Description:</h2>
+        <p>
+          JavaScript has several data types categorized into primitive and
+          non-primitive types:
+        </p>
+        <h3>Primitive Data Types:</h3>
+        <ul>
+          <li><strong>String:</strong> Represents textual data.</li>
+          <li>
+            <strong>Number:</strong> Represents numeric data (both integers and
+            floating-point numbers).
+          </li>
+          <li><strong>Boolean:</strong> Represents true or false values.</li>
+          <li>
+            <strong>Undefined:</strong> A variable that has been declared but
+            not assigned a value.
+          </li>
+          <li>
+            <strong>Null:</strong> Represents the intentional absence of any
+            object value.
+          </li>
+          <li>
+            <strong>Symbol:</strong> Represents a unique and immutable value,
+            often used as object property keys.
+          </li>
+          <li>
+            <strong>BigInt:</strong> Represents integers larger than the Number
+            type can handle.
+          </li>
+        </ul>
+        <h3>Non-Primitive Data Types (Reference Types):</h3>
+        <ul>
+          <li>
+            <strong>Object:</strong> A collection of key-value pairs, including
+            arrays, functions, and more complex objects.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Example:</h2>
+        <div class="example-code">
+          <pre>
+// Primitive Data Types
+let name = "Alice";               // String
+let age = 30;                     // Number
+let isMember = false;             // Boolean
+let x;                            // Undefined
+let y = null;                     // Null
+let id = Symbol("id");            // Symbol
+let bigNum = 9007199254740991n;   // BigInt
+
+// Non-Primitive Data Type
+let person = {                    // Object
+    name: "Alice",
+    age: 30
+};
+                </pre
+          >
+        </div>
+        <p><strong>Primitive vs Non-Primitive Data Types:</strong></p>
+        <ul>
+          <li>
+            Primitive Data Types are immutable and compared by their value.
+          </li>
+          <li>
+            Non-Primitive Data Types (objects) are mutable and compared by their
+            reference.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Practice Question:</h2>
+        <div class="practice-question">
+          <p>
+            Declare variables of each primitive type and log their types using
+            <code>typeof</code>.
+          </p>
+          <p><strong>Expected Output:</strong></p>
+          <div class="code-block">
+            <pre>
+console.log(typeof name);   // "string"
+console.log(typeof age);    // "number"
+console.log(typeof isMember); // "boolean"
+console.log(typeof x);      // "undefined"
+console.log(typeof y);      // "object" (note: null is technically an object)
+console.log(typeof id);     // "symbol"
+console.log(typeof bigNum); // "bigint"
+                    </pre
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Output Question:</h2>
+        <div class="output-question">
+          <p>What is the output of the following code?</p>
+          <div class="code-block">
+            <pre>
+let a = "Hello";
+let b = 42;
+let c = true;
+let d;
+let e = null;
+let f = Symbol("unique");
+let g = 1234567890123456789012345678901234567890n;
+
+console.log(typeof a);  // What is the output?
+console.log(typeof b);  // What is the output?
+console.log(typeof c);  // What is the output?
+console.log(typeof d);  // What is the output?
+console.log(typeof e);  // What is the output?
+console.log(typeof f);  // What is the output?
+console.log(typeof g);  // What is the output?
+                    </pre
+            >
+          </div>
+          <p><strong>Expected Output:</strong></p>
+          <div class="code-block">
+            <pre>
+string
+number
+boolean
+undefined
+object
+symbol
+bigint
+                    </pre
+            >
+          </div>
+        </div>
+      </section>
+
+      <a href="index.html">Back to Topics</a>
+    </div>
+  </body>
+</html>

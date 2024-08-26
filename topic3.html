@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Variables (let, const, var)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .code-block {
+        background-color: #2e2e2e;
+        color: #f8f8f2;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        overflow-x: auto;
+      }
+      .code-block pre {
+        margin: 0;
+      }
+      .example-code,
+      .practice-question,
+      .output-question {
+        background-color: #1e1e1e;
+        color: #dcdcdc;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JavaScript Variables (let, const, var)</h1>
+      <a href="index.html">Back to Topics</a>
+      <section>
+        <h2>Description:</h2>
+        <p>JavaScript variables can be declared using:</p>
+        <ul>
+          <li><strong>let:</strong> Block-scoped, mutable.</li>
+          <li>
+            <strong>const:</strong> Block-scoped, immutable; must be initialized
+            at declaration.
+          </li>
+          <li>
+            <strong>var:</strong> Function-scoped; avoid using
+            <code>var</code> in modern code due to potential issues with scope.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Example:</h2>
+        <div class="example-code">
+          <pre>
+// Variables Declaration
+let count = 10;       // Block-scoped, mutable
+const PI = 3.14159;   // Block-scoped, immutable
+var globalVar = "I'm a global variable"; // Function-scoped
+                </pre
+          >
+        </div>
+      </section>
+
+      <section>
+        <h2>Practice Question:</h2>
+        <div class="practice-question">
+          <p>
+            Write a function using <code>let</code> and
+            <code>const</code> inside a block scope and explain the difference
+            in behavior compared to <code>var</code>.
+          </p>
+          <p><strong>Example:</strong></p>
+          <div class="code-block">
+            <pre>
+function testScopes() {
+    if (true) {
+        var x = 1;   // Function-scoped
+        let y = 2;   // Block-scoped
+        const z = 3; // Block-scoped
+    }
+    console.log(x); // What is the output?
+    console.log(y); // What is the output?
+    console.log(z); // What is the output?
+}
+testScopes();
+                    </pre
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Output Question:</h2>
+        <div class="output-question">
+          <p>What is the output of this program?</p>
+          <div class="code-block">
+            <pre>
+function testScopes() {
+    if (true) {
+        var x = 1;
+        let y = 2;
+        const z = 3;
+    }
+    console.log(x); // What is the output?
+    console.log(y); // What is the output?
+    console.log(z); // What is the output?
+}
+testScopes();
+                    </pre
+            >
+          </div>
+          <p><strong>Expected Output:</strong></p>
+          <div class="code-block">
+            <pre>
+1
+ReferenceError: y is not defined
+ReferenceError: z is not defined
+                    </pre
+            >
+          </div>
+        </div>
+      </section>
+
+      <a href="index.html">Back to Topics</a>
+    </div>
+  </body>
+</html>

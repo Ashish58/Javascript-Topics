@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .code-block {
+            background-color: #2e2e2e;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+        .code-block pre {
+            margin: 0;
+        }
+        .example-code, .practice-question, .output-question {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Object in JavaScript</h1>
+        
+        <section>
+            <h2>Description:</h2>
+            <p>The Math object provides properties and methods for performing mathematical operations.</p>
+        </section>
+        
+        <section>
+            <h2>Example:</h2>
+            <div class="example-code">
+                <pre>
+let randomNum = Math.random(); // Returns a random number between 0 and 1
+let roundedNum = Math.floor(4.7); // Returns 4
+                </pre>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Practice Question:</h2>
+            <div class="practice-question">
+                <p>Write a function that generates a random integer between two given values using the Math object.</p>
+                <div class="code-block">
+                    <pre>
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+console.log(getRandomInt(1, 10));
+                    </pre>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Output Question:</h2>
+            <div class="output-question">
+                <p>What is the output of this program?</p>
+                <div class="code-block">
+                    <pre>
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+console.log(getRandomInt(1, 10));
+                    </pre>
+                </div>
+                <p><strong>Expected Output:</strong></p>
+                <div class="code-block">
+                    <pre>
+A random integer between 1 and 10 (inclusive).
+                    </pre>
+                </div>
+            </div>
+        </section>
+        
+        <a href="index.html">Back to Topics</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy and Falsy Values in JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .code-block {
+            background-color: #2e2e2e;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+        .code-block pre {
+            margin: 0;
+        }
+        .example-code, .practice-question, .output-question {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Truthy and Falsy Values in JavaScript</h1>
+        
+        <section>
+            <h2>Description:</h2>
+            <p>In JavaScript, values are either "truthy" or "falsy" in conditional contexts. Falsy values include false, 0, "" (empty string), null, undefined, and NaN. All other values are considered truthy.</p>
+        </section>
+        
+        <section>
+            <h2>Example:</h2>
+            <div class="example-code">
+                <pre>
+let value = 0;
+if (value) {
+    console.log("Value is truthy");
+} else {
+    console.log("Value is falsy");
+}
+                </pre>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Practice Question:</h2>
+            <div class="practice-question">
+                <p>Write a function that checks if a variable is truthy or falsy and returns a corresponding message.</p>
+                <div class="code-block">
+                    <pre>
+function checkValue(val) {
+    return val ? "Value is truthy" : "Value is falsy";
+}
+console.log(checkValue("Hello")); // What is the output?
+console.log(checkValue(0));       // What is the output?
+                    </pre>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Output Question:</h2>
+            <div class="output-question">
+                <p>What is the output of this program?</p>
+                <div class="code-block">
+                    <pre>
+function checkValue(val) {
+    return val ? "Value is truthy" : "Value is falsy";
+}
+console.log(checkValue("Hello")); // What is the output?
+console.log(checkValue(0));       // What is the output?
+                    </pre>
+                </div>
+                <p><strong>Expected Output:</strong></p>
+                <div class="code-block">
+                    <pre>
+Value is truthy
+Value is falsy
+                    </pre>
+                </div>
+            </div>
+        </section>
+        
+        <a href="index.html">Back to Topics</a>
+    </div>
+</body>
+</html>

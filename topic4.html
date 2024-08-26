@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Running Code in Dev Tools (Line by Line)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .code-block {
+        background-color: #2e2e2e;
+        color: #f8f8f2;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        overflow-x: auto;
+      }
+      .code-block pre {
+        margin: 0;
+      }
+      .example-code,
+      .practice-question,
+      .output-question {
+        background-color: #1e1e1e;
+        color: #dcdcdc;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Running Code in Dev Tools (Line by Line)</h1>
+
+      <section>
+        <h2>Description:</h2>
+        <p>
+          JavaScript code can be debugged using browser developer tools. You can
+          step through the code line by line to inspect variable values and
+          understand code execution.
+        </p>
+      </section>
+
+      <section>
+        <h2>Example:</h2>
+        <p>To debug JavaScript code in your browser's developer tools:</p>
+        <ul>
+          <li>
+            Open DevTools (usually by pressing <code>F12</code> or
+            <code>Ctrl+Shift+I</code> / <code>Cmd+Option+I</code>).
+          </li>
+          <li>Go to the "Sources" tab.</li>
+          <li>
+            Set a breakpoint by clicking on the line number where you want to
+            pause execution.
+          </li>
+          <li>
+            Use the "Step Over" (F10) and "Step Into" (F11) buttons to execute
+            code line by line and inspect variable values.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Practice Question:</h2>
+        <div class="practice-question">
+          <p>
+            Set a breakpoint in the following function and observe variable
+            changes line by line.
+          </p>
+          <div class="code-block">
+            <pre>
+function add(a, b) {
+    let result = a + b;
+    console.log(result);
+    return result;
+}
+add(5, 10);
+                    </pre
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Output Question:</h2>
+        <div class="output-question">
+          <p>What will you see in the console when the function executes?</p>
+          <div class="code-block">
+            <pre>
+function add(a, b) {
+    let result = a + b;
+    console.log(result);
+    return result;
+}
+add(5, 10);
+                    </pre
+            >
+          </div>
+          <p><strong>Expected Output:</strong></p>
+          <div class="code-block">
+            <pre>
+15
+                    </pre
+            >
+          </div>
+        </div>
+      </section>
+
+      <a href="index.html">Back to Topics</a>
+    </div>
+  </body>
+</html>
